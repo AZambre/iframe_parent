@@ -91,7 +91,7 @@ server.register([
     callback(err, true, user)
   }
 
-  var basicValidation  = function (request, username, password, callback) {
+  var basicValidation  = function (request, userKey, callback) {
     var user = Users[ userKey ]
 
     if (!user) {

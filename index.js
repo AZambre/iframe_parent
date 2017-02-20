@@ -53,7 +53,7 @@ server.register([
   },
   {
     register: BasicAuth
-  }
+  },
   {
     register: inert
   }

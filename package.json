@@ -4,10 +4,14 @@
   "description": "iframe parent server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "AZ",
   "license": "MIT",
+  "engines": {
+    "node": "6.9.5"
+  },
   "dependencies": {
     "bcrypt": "^1.0.2",
     "boom": "^4.2.0",

@@ -17,8 +17,8 @@ var server = new Hapi.Server()
 
 // add server’s connection information
 server.connection({
-  host: 'localhost',
-  port: 5000
+  //host: 'localhost',
+  port: process.env.PORT || 5000
 })
 
 // register plugins to server instance

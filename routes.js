@@ -27,7 +27,7 @@ var routes = [
           return reply.redirect('/home')
         }
 
-        reply.view('login')
+        return reply.view('login')
       }
     }
   },
@@ -88,7 +88,7 @@ var routes = [
           return reply.view('home')
         }
 
-        reply.redirect('/login')
+        return reply.redirect('/login')
       }
     }
   },
@@ -136,6 +136,18 @@ var routes = [
       handler: function (request, reply) {
         request.cookieAuth.clear();
         reply.redirect('/login')
+      }
+    }
+  },
+  {
+    method: 'POST',
+    path: '/userAuth',
+    config: {
+      handler: function (request, reply) {
+        var userKey = request.payload.userKey
+        return reply({
+          "result": "ok"
+        });
       }
     }
   }

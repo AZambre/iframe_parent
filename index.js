@@ -92,6 +92,7 @@ server.register([
   }
 
   var basicValidation  = function (request, userKey, callback) {
+    server.log('info', 'userKey obtained - ' + userKey)
     var user = Users[ userKey ]
 
     if (!user) {

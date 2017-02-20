@@ -143,11 +143,13 @@ var routes = [
     method: 'POST',
     path: '/userAuth',
     config: {
+      auth: 'simple',
       handler: function (request, reply) {
+        request.server.log('info', 'user token call')
         var userKey = request.payload.userKey
-        return reply({
-          "result": "ok"
-        });
+        reply({
+            "result": "ok"
+        })
       }
     }
   }

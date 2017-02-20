@@ -3,6 +3,7 @@ var Good = require('good')
 var Vision = require('vision')
 var Handlebars = require('handlebars')
 var CookieAuth = require('hapi-auth-cookie')
+var BasicAuth = require('hapi-auth-basic')
 var inert = require('inert');
 
 var Users = {
@@ -51,6 +52,9 @@ server.register([
     register: CookieAuth
   },
   {
+    register: BasicAuth
+  }
+  {
     register: inert
   }
 ], function (err) {
@@ -87,6 +91,17 @@ server.register([
     callback(err, true, user)
   }
 
+  var basicValidation  = function (request, username, password, callback) {
+    var user = Users[ userKey ]
+
+    if (!user) {
+      return callback(null, false)
+    }
+
+    server.log('info', 'userKey authenticated')
+    callback(err, true, user)
+  }
+
   server.auth.strategy('session', 'cookie', true, {
     password: 'm!*"2/),p4:xDs%KEgVr7;e#85Ah^WYC',
     cookie: '_wn_benefit_',
@@ -94,6 +109,8 @@ server.register([
     isSecure: false,
     validateFunc: validation
   })
+
+  server.auth.strategy('simple', 'basic', { validateFunc: basicValidation })
 
   server.log('info', 'Registered auth strategy: cookie auth')
 

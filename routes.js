@@ -37,7 +37,8 @@ var routes = [
     config: {
       // auth: 'session',
       auth: {
-        mode: 'try'
+        mode: 'try',
+        strategy: 'session'
       },
       plugins: {
         'hapi-auth-cookie': {

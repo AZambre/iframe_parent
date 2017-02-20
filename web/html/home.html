@@ -36,45 +36,79 @@
     </script>
   </head>
   <body class="hl">
-    <div class="navbar-wrapper">
-      <div class="navbar-item-wrapper">
-        <div class="navbar-item navbar-project">
-          <a href="javascript:window.location.href=window.location.href">WB</a>
+
+
+    <div class="header">
+      <div class="col-md-12 enroll">
+        <div class="message">ENROLL IN YOUR NEW HIRE BENEFITS NOW</div>
+        <div class="btn-wrapper">
+          <button type="button" class="btn btn-default btn-lg">Enroll Now</button>
         </div>
-        <div class="navbar-item">
-          <div class="header-crown item-selected">
-          </div>
-          <div class="header-title">
-            <a id="native" data-container="nativeCont">Native</a>
-          </div>
+      </div>
+      <div class="col-md-12 product">
+        <div class="brand">
+          BENEFIT
         </div>
-        <div class="navbar-item">
-          <div class="header-crown">
-          </div>
-          <div class="header-title">
-            <a id="recommendations" data-container="recommendationsCont" data-url="http://localhost:3000/secure/page/recommendations">Recommendations</a>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <div class="header-crown">
-          </div>
-          <div class="header-title">            
-            <a id="smartInsight" data-container="smartInsightCont" data-url="http://localhost:3000/secure/page/smartInsight">Smart Insights</a>
-          </div>
-        </div>
-        <div class="navbar-item navbar-logged-in">
-          <div class="dropdown">
-            <a role="button" data-toggle="dropdown" aria-expanded="false">
+        <div class="information">
+          <div class="info-item">
+            <div class="first">
+              Welcome
+            </div>
+            <div class="second">
               AZ
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="logout">Sign out</a></li>
-            </ul>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="first">
+              <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+            </div>
+            <div class="second">
+              LOGOUT
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="first">
+              <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+            </div>
+            <div class="second">
+              CONTACT
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="first">
+              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            </div>
+            <div class="second">
+              LANGUAGE
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="first">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </div>
+            <div class="second">
+              ADMIN
+            </div>
           </div>
         </div>
       </div>
+      <div class="col-md-12 navigation">
+        <div class="home">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        </div>
+        <div class="nav-wrapper">
+          <ul class="nav nav-pills nav-justified">
+            <li role="presentation"><a data-toggle="tab" href="#">MY INFORMATION</a></li>
+            <li role="presentation" class="active"><a data-toggle="tab" href="#">BENEFITS</a></li>
+            <li role="presentation"><a data-toggle="tab" data-container="recommendationsCont" data-url="http://localhost:3000/secure/page/recommendations">RECOMMENDATIONS</a></li>
+            <li role="presentation"><a data-toggle="tab" href="#" data-container="smartInsightCont" data-url="http://localhost:3000/secure/page/smartInsight">SMART INSIGHT</a></li>
+            <li role="presentation"><a data-toggle="tab" href="#">FORMS</a></li>
+            <li role="presentation"><a data-toggle="tab" href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
     <div class="outerLayer">
       <div id="nativeCont" class="col-md-12 container">
         <p>This is native content</p>

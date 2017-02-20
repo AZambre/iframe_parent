@@ -92,12 +92,12 @@ server.register([
   }
 
   var basicValidation  = function (request, userKey, callback) {
-    // server.log('info', 'userKey obtained - ' + userKey)
-    // var user = Users[ userKey ]
+    server.log('info', 'userKey obtained - ' + userKey)
+    var user = Users[ userKey ]
 
-    // if (!user) {
-    //   return callback(null, false)
-    // }
+    if (!user) {
+      return callback(null, false)
+    }
 
     server.log('info', 'userKey authenticated')
     callback(err, true, user)

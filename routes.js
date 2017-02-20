@@ -144,7 +144,15 @@ var routes = [
     method: 'POST',
     path: '/userAuth',
     config: {
-      auth: 'simple',
+      auth: {
+        mode: 'try',
+        strategy: 'simple'
+      },
+      plugins: {
+        'hapi-auth-basic': {
+          redirectTo: false
+        }
+      },
       handler: function (request, reply) {
         request.server.log('info', 'user token call')
         var userKey = request.payload.userKey

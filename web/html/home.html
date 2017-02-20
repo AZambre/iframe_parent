@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>WB - Corporate</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      !function () {
+          var topics = {};
+           jQuery.Topic = function (id) {
+              var callbacks, method,
+                  topic = id && topics[ id ];
+
+              if ( !topic ) {
+                  callbacks = jQuery.Callbacks();
+                  topic = {
+                      publish: callbacks.fire,
+                      subscribe: callbacks.add,
+                      unsubscribe: callbacks.remove
+                  };
+                  if ( id ) {
+                      topics[ id ] = topic;
+                  }
+              }
+              return topic;
+          };
+      }();
+    </script>
+  </head>
+  <body class="hl">
+    <div class="navbar-wrapper">
+      <div class="navbar-item-wrapper">
+        <div class="navbar-item navbar-project">
+          <a href="javascript:window.location.href=window.location.href">WB</a>
+        </div>
+        <div class="navbar-item">
+          <div class="header-crown item-selected">
+          </div>
+          <div class="header-title">
+            <a id="native" data-container="nativeCont">Native</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="header-crown">
+          </div>
+          <div class="header-title">
+            <a id="recommendations" data-container="recommendationsCont" data-url="http://localhost:3000/secure/page/recommendations">Recommendations</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="header-crown">
+          </div>
+          <div class="header-title">            
+            <a id="smartInsight" data-container="smartInsightCont" data-url="http://localhost:3000/secure/page/smartInsight">Smart Insights</a>
+          </div>
+        </div>
+        <div class="navbar-item navbar-logged-in">
+          <div class="dropdown">
+            <a role="button" data-toggle="dropdown" aria-expanded="false">
+              AZ
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="logout">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outerLayer">
+      <div id="nativeCont" class="col-md-12 container">
+        <p>This is native content</p>
+      </div>
+      <div id="recommendationsCont" class="col-md-12 container" style="display: none">
+        <iframe src=""></iframe>
+      </div>
+      <div id="smartInsightCont" class="col-md-12 container" style="display: none">
+        <iframe src=""></iframe>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/home.js"></script>
+  </body>
+</html>

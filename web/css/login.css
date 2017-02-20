@@ -1,0 +1,202 @@
+body {
+  	min-height: 500px;
+  	/*font-family: Garamond, serif;*/
+  	font-family: "Proxima Nova", sans-serif;
+  	background-color: #f2f3ee;
+}
+
+.navbar-static-top {
+  	margin-bottom: 0;
+}
+
+.hl .navbar-right {
+	float: right !important;
+	margin-right: 50px;
+}
+
+.hl .navbar-right li a {
+	font-size: 12px;
+}
+
+.hl .container{
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	overflow-x: hidden;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.hl .navbar {
+	position: relative;
+	height: 80px;
+	margin-bottom: 0;
+	border: 0px solid transparent;
+	background-image: none;
+	background-color: #fff;
+}
+
+.hl .navbar .container{
+	vertical-align: middle;
+	width: 80%;
+	margin-top: 12.5px;
+	margin-bottom: 12.5px;
+}
+
+.hl .navbar .navbar-right .sign-up-anchor {
+	/*background-image: url("/img/Signup.png");
+	background-size: 80px 60px;
+    background-repeat: no-repeat;*/
+}
+
+.hl .navbar .navbar-right .sign-up-anchor {
+	padding-top: 12px;
+	width: 110px;
+}
+
+.hl .navbar .navbar-header  .navbar-brand {
+	font-size: 16px;
+	font-family: Proxima Nova, sans-serif;
+}
+
+.hl .navbar .navbar-header .navbar-brand .health {
+	color: #a6d96a;
+	padding-right: 2px;
+}
+
+.hl .navbar .navbar-header .navbar-brand .lucid {
+	color: #6d6e70;
+}
+
+.hl .container .hipaa-logo {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hl .container .hipaa-logo img{
+	width: 8%;
+}
+
+.hl .footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #f2f3ee;
+}
+
+.hl .footer .container{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 2px solid #ccc;
+}
+
+.hl .container .form-container {
+	text-align: center;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.hl .container .form-container .form-group {
+  	margin-bottom: 0px;
+}
+
+.form-inline {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+.form-signin.form-request-demo {
+	max-width: 700px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+	float: left;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+	text-align: left;
+	font-size: 13px;
+}
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	      box-sizing: border-box;
+	padding: 10px;
+	font-size: 15px;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: -1px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background-color: #f9f9f9;
+}
+
+.form-signin .btn {
+	margin-top: 10px;
+}
+
+.form-signin.form-request-demo .btn {
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.hl .container .form-signin .message {
+  	margin-bottom: 10px;
+  	font-weight: bold;
+  	color: #737373;
+}
+
+.hl .container .form-signin .issueContact {
+  	margin-bottom: 20px;
+  	margin-top: 20px;
+  	color: #737373;
+}
+
+.hl .reset-password {
+	text-align: right;
+	margin-top: 10px;
+	float: right;
+	font-size: 13px;
+}
+
+.hl .container .form-signin .message-details {
+  	margin-bottom: 10px;
+  	font-weight: normal;
+  	color: #333;
+}

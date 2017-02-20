@@ -1,5 +1,5 @@
 !function() {
-	$('.navbar-item-wrapper a').click(function(e) {
+	$('#navbar-item-wrapper a').click(function(e) {
 		e.preventDefault();
 
 		$('.outerLayer .col-md-12.container').hide();
